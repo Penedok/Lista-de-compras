@@ -1,6 +1,9 @@
 import './principal.css'
 import Botoes from "../botao"
 
+
+
+
 const TextoPrincipapl = () =>{
     return (
         <div className="caixa-principal">
@@ -9,7 +12,7 @@ const TextoPrincipapl = () =>{
                 <p className="paragrafo-principal">Faça a sua lista de compras adicionando os itens que deseja!
                 Podendo ajustar a quatidade marcando o check-out dos itens e podendo até remover da sua lista..
                 </p>
-            <Botoes button="Criar lista"/>    
+            <Botoes>Criar lista</Botoes>    
             </div>
         </div>
 
