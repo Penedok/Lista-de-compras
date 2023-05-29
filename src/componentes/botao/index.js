@@ -1,3 +1,6 @@
+import './botao.css'
+
+
 
 const Botoes = (props)=>{
     return(

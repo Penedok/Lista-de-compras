@@ -1,3 +1,4 @@
+ import './dialogo.css'
  import Input from "../input";
  import Botoes from "../botao";
 

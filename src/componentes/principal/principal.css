@@ -1,0 +1,12 @@
+.caixa-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    margin: 2em 0 0 0 ;
+}
+.caixa-texto{
+    padding: 0 1em;
+}
+
