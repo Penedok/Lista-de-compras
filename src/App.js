@@ -1,16 +1,20 @@
-import TextoPrincipapl from "./componentes/principal";
-import ModoDialogo from "./componentes/dialogo";
+import TextoPrincipal from "./componentes/principal";
+
+import {Modal} from "./componentes/Modal";
+
+
 
 
 function App() {
+  
   return (
+   
+
     <div className="App">
-      <TextoPrincipapl/>
-      <ModoDialogo label="Nome do Item que deseja adicionar" placeholder="Nome Item"/>
-    
- 
+      <TextoPrincipal/>
+      <Modal/>
     </div>
-  );
+  )
 }
 
 export default App;

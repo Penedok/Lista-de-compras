@@ -1,7 +1,7 @@
 .botoes{
  padding: 1em 0;
 }
-button{
+.btn {
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 0.5em 1.5em;
@@ -11,6 +11,6 @@ button{
     font-size: 15px;
     cursor: pointer;
 }
-button:pla{
+.btn::placeholder{
     color: #95FFD4;
 }

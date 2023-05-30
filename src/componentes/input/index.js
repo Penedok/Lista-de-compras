@@ -1,7 +1,8 @@
 
 import './input.css'
 
-const Input = (props) =>{
+
+const Inputs = (props) =>{
    
     const aoDigitado = (evento)=>{
         props.aoDigitado(evento.target.value)  
@@ -20,4 +21,4 @@ const Input = (props) =>{
     )
 }
 
-export default Input
+export default Inputs

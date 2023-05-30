@@ -5,7 +5,7 @@ import './botao.css'
 const Botoes = (props)=>{
     return(
         <div className="botoes">
-            <button>{props.children}</button>  
+            <button className='btn'>{props.children}</button>  
         </div>
     )
 }

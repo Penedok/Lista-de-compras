@@ -1,10 +1,17 @@
 import './principal.css'
-import Botoes from "../botao"
+import Botoes from '../botao'
 
 
 
 
-const TextoPrincipapl = () =>{
+
+
+const TextoPrincipal = () =>{
+   
+    const meuEvento= ()=>{
+        console.log('opa, fui ativado')
+    }
+
     return (
         <div className="caixa-principal">
             <div className="caixa-texto">
@@ -12,11 +19,12 @@ const TextoPrincipapl = () =>{
                 <p className="paragrafo-principal">Faça a sua lista de compras adicionando os itens que deseja!
                 Podendo ajustar a quatidade marcando o check-out dos itens e podendo até remover da sua lista..
                 </p>
-            <Botoes>Criar lista</Botoes>    
+                <Botoes onClick={meuEvento}>Criar Lista</Botoes>
             </div>
         </div>
 
     )
 }
 
-export default TextoPrincipapl
+
+export default TextoPrincipal
