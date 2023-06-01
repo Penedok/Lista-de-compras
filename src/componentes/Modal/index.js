@@ -34,17 +34,17 @@ import ProdutosAdicionados from '../ProdutosAdicionado'
             <dialog className="teste">
                 <form onSubmit={aoAdicionar}>
                     <h2 className="texto-dialogo">Lista de Compras</h2>
-                    <Inputs label="Nome do Item"
+                    <Inputs label="Produto"
                     type="text"
                  
-                    placeholder="nome item.."
+                    placeholder="Produto.."
                     valor={item}
                     aoDigitado={(evento) => setItem(evento.target.value)} />
 
                     <Inputs label="Quantidade"
                     type="number"
                    
-                    placeholder="quantidade item .."
+                    placeholder="Quantidade .."
                     valor={quantidade}
                     aoDigitado={(evento) => setQuantidade(evento.target.value)} />
 
