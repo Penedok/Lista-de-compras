@@ -21,7 +21,9 @@
 }
 .lista-item{
   text-transform: uppercase;  
- padding: 0 0.5em;
+  padding: 0 0.5em;
+  font-weight: 600;
+
 }
 .btn-remover{
     border: 1px solid transparent;
