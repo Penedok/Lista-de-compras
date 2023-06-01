@@ -1,7 +1,10 @@
 
 .caixa-lista{
     display: flex;
-    border: 1px solid transparent;
+    justify-content: center;
+    padding: 0 1.8em 0 0;
+    color: #444444;
+
 }
 .apaga{
     display: none;
@@ -14,11 +17,18 @@
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: baseline;
 }
 .lista-item{
- 
+  text-transform: uppercase;  
+ padding: 0 0.5em;
 }
 .btn-remover{
-    
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0.5em 1.5em;
+    color: #444444;
+
+    font-size: 12px;
+    cursor: pointer;
 }

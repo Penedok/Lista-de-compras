@@ -15,8 +15,8 @@ const ProdutosAdicionados =({item, quantidade})=>{
                 <li className='lista'>
                     <input type='checkbox' className='input-checkbox'/>
                     <span className='lista-item'>{quantidade} und </span>
-                  
-                    <span className='lista-item'> - {item} </span>
+                
+                    <span className='lista-item'>  {item} </span>
                     <button className='btn-remover' onClick={apagar} >Remover</button>
                 </li>
             
