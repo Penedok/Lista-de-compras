@@ -1,6 +1,8 @@
 .teste{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     background: #F5D482;
     border: 1px solid transparent;
     border-radius: 16px;
@@ -9,3 +11,6 @@
     width: min(37rem, 50%);
    
 }
+.teste::backdrop {
+    background: rgba(0, 0, 0, .7);
+  }
