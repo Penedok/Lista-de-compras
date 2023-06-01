@@ -3,11 +3,6 @@ import {Modal} from "./componentes/Modal";
 import { useState } from "react";
 
 
-
-
-
-
-
 function App() {
   
   const [mercadorias, setMercadorias] = useState([])
@@ -18,12 +13,10 @@ function App() {
   }
 
   return (
-   
-
     <div className="App">
       <TextoPrincipal/>
       <Modal  mercadorias={mercadorias} aoNovoProdutoAdicionado={aoNovoProdutoAdicionado}/>
-    
+      
     </div>
   )
 }

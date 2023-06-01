@@ -8,26 +8,21 @@ import ProdutosAdicionados from '../ProdutosAdicionado'
 
 
  export const Modal = (props) =>{
-
-
     const [item, setItem] = useState('');
     const [quantidade, setQuantidade] = useState('');
 
     const aoAdicionar = (evento) => {
-
         evento.preventDefault();
-
         const produto =    {
           item: item,
           quantidade: quantidade
         }
-
         props.aoNovoProdutoAdicionado(produto)
-
         setItem('')
         setQuantidade('')
+    }
 
-    };
+
     return(
         
         <div>
@@ -49,7 +44,10 @@ import ProdutosAdicionados from '../ProdutosAdicionado'
                     aoDigitado={(evento) => setQuantidade(evento.target.value)} />
 
                     <Button>Adicionar</Button>
-                    {props.mercadorias.map((mercadoria, index) => <ProdutosAdicionados key={index} item={mercadoria.item} quantidade={mercadoria.quantidade} />)}
+                    {props.mercadorias.map((mercadorias, index) => <ProdutosAdicionados key={index} item={mercadorias.item} quantidade={mercadorias.quantidade}
+                   
+                    
+                    />)}
                 </form>    
             </dialog>        
         </div>
