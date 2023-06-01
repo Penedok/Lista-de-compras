@@ -2,13 +2,16 @@ import './botao.css'
 
 
 
-const Botoes = (props)=>{
+
+
+const Button = (props)=>{
+
     return(
         <div className="botoes">
-            <button className='btn'>{props.children}</button>  
+            <button className='btn' onClick={props.onClick}>{props.children}</button>  
         </div>
     )
 }
 
 
-export default Botoes
+export default Button

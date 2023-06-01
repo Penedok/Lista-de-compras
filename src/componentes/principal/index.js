@@ -1,16 +1,17 @@
 import './principal.css'
-import Botoes from '../botao'
-
-
+import Button from '../botao'
 
 
 
 
 const TextoPrincipal = () =>{
    
-    const meuEvento= ()=>{
-        console.log('opa, fui ativado')
-    }
+ const Teste =()=>{
+    const Tenta = document.querySelector(".teste")
+    Tenta.showModal()
+
+
+ }
 
     return (
         <div className="caixa-principal">
@@ -19,7 +20,8 @@ const TextoPrincipal = () =>{
                 <p className="paragrafo-principal">Faça a sua lista de compras adicionando os itens que deseja!
                 Podendo ajustar a quatidade marcando o check-out dos itens e podendo até remover da sua lista..
                 </p>
-                <Botoes onClick={meuEvento}>Criar Lista</Botoes>
+                <Button onClick={Teste}>Criar Lista</Button>
+                
             </div>
         </div>
 

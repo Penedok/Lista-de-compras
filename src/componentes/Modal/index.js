@@ -1,39 +1,56 @@
 import './modal.css'
 import Inputs from '../input'
-import Botoes from "../botao"
+import Button from "../botao"
 import { useState } from 'react'
+import ProdutosAdicionados from '../ProdutosAdicionado'
 
 
 
 
- export const Modal = () =>{
+ export const Modal = (props) =>{
+
+
     const [item, setItem] = useState('');
     const [quantidade, setQuantidade] = useState('');
 
     const aoAdicionar = (evento) => {
+
         evento.preventDefault();
-        console.log('form foi submetido =>', item, quantidade);
+
+        const produto =    {
+          item: item,
+          quantidade: quantidade
+        }
+
+        props.aoNovoProdutoAdicionado(produto)
+
+        setItem('')
+        setQuantidade('')
+
     };
     return(
         
         <div>
-            <dialog open  className="teste">
+            <dialog  className="teste">
                 <form onSubmit={aoAdicionar}>
                     <h2 className="texto-dialogo">Lista de Compras</h2>
                     <Inputs label="Nome do Item"
                     type="text"
-                    obrigatorio={true}
+                 
                     placeholder="nome item.."
                     valor={item}
-                    aoDigitado={valor => setItem(valor)} />
+                    aoDigitado={(evento) => setItem(evento.target.value)} />
+
                     <Inputs label="Quantidade"
                     type="number"
-                    obrigatorio={true}    
+                   
                     placeholder="quantidade item .."
                     valor={quantidade}
-                    aoDigitado={valor => setQuantidade(valor)} />
-                    <Botoes>Adicionar</Botoes>
-                    </form>
+                    aoDigitado={(evento) => setQuantidade(evento.target.value)} />
+
+                    <Button>Adicionar</Button>
+                    {props.mercadorias.map((mercadoria, index) => <ProdutosAdicionados key={index} item={mercadoria.item} quantidade={mercadoria.quantidade} />)}
+                </form>    
             </dialog>        
         </div>
     )

@@ -1,0 +1,24 @@
+
+.caixa-lista{
+    display: flex;
+    border: 1px solid transparent;
+}
+.apaga{
+    display: none;
+}
+
+.opcoes{
+    display: flex;
+}
+.lista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lista-item{
+ 
+}
+.btn-remover{
+    
+}
