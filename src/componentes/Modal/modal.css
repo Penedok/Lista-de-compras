@@ -1,7 +1,5 @@
 .teste{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
     text-align: center;
     background: #F5D482;
     border: 1px solid transparent;

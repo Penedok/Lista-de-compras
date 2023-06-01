@@ -31,7 +31,7 @@ import ProdutosAdicionados from '../ProdutosAdicionado'
     return(
         
         <div>
-            <dialog  className="teste">
+            <dialog className="teste">
                 <form onSubmit={aoAdicionar}>
                     <h2 className="texto-dialogo">Lista de Compras</h2>
                     <Inputs label="Nome do Item"
