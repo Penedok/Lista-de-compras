@@ -1,8 +1,11 @@
 .teste{
+    display: flex;
+    justify-content: center;
     background: #F5D482;
     border: 1px solid transparent;
     border-radius: 16px;
     color: #444444;
     box-shadow: 8px 8px 16px rgba(0,0, 0, 0.08);
+    width: min(37rem, 50%);
    
 }
